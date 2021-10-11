@@ -63,7 +63,6 @@
   "gitlens.codeLens.enabled": false,
 
   "git.enableSmartCommit": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "liveshare.featureSet": "insiders",
 
   "typescript.tsserver.log": "verbose",
@@ -102,7 +101,25 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "GitBash": {
+      "source": "Git Bash",
+      "path": ["C:\\Program Files\\Git\\bin\\bash.exe"],
+      "icon": "terminal-bash"
+    }
+  },
   "terminal.integrated.sendKeybindingsToShell": true,
   "editor.largeFileOptimizations": false,
   "beautify.ignore": "",
@@ -127,6 +144,7 @@
       "htm",
       "html"
     ]
-  }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
 
 }
