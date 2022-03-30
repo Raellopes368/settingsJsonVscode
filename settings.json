@@ -10,6 +10,8 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.semanticHighlighting.enabled": false,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
 
   "files.exclude": {
     "**/.git": true,
@@ -17,7 +19,7 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "node_modules": true
+    "**/node_modules": false
   },
 
   "explorer.compactFolders": false,
@@ -32,32 +34,39 @@
   "editor.parameterHints.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "liveServer.settings.useBrowserPreview":false,
-  
+  "liveServer.settings.useBrowserPreview": false,
+
   "editor.rulers": [80, 120],
   "eslint.autoFix": true,
-  "editor.codeActionsOnSave": { 
+  "editor.codeActionsOnSave": {
     "editor.formatOnSave": true,
     "eslint.format.enable": true,
     "source.fixAll.eslint": true,
     "[javascript]": true
-   },
-   "eslint.validate": [
-     "javascript",
-     "javascriptreact",
-     "typescript",
-     "typescriptreact"
-   ],
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "files.associations": {
     ".sequelizerc": "javascript",
     ".stylelintrc": "json",
     ".prettierrc": "json"
   },
 
-"emmet.syntaxProfiles": { "javascript": "jsx", "vue-html": "html", "vue": "vue" },
-  "emmet.includeLanguages": { "javascript": "javascriptreact", "vue-html": "html", "vue": "html" },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "vue-html": "html",
+    "vue": "vue"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "vue": "html"
+  },
 
-  
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
@@ -97,7 +106,6 @@
   },
 
   "workbench.colorTheme": "Dracula",
-  "diffEditor.ignoreTrimWhitespace": false,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -125,26 +133,43 @@
   "beautify.ignore": "",
   "beautify.language": {
     "js": {
-      "type": [
-        "javascript",
-        "json",
-        "jsonc"
-      ],
-      "filename": [
-        ".jshintrc",
-        ".jsbeautifyrc"
-      ]
+      "type": ["javascript", "json", "jsonc"],
+      "filename": [".jshintrc", ".jsbeautifyrc"]
     },
-    "css": [
-      "css",
-      "less",
-      "scss"
-    ],
-    "html": [
-      "htm",
-      "html"
-    ]
+    "css": ["css", "less", "scss"],
+    "html": ["htm", "html"]
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash"
-
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "bracketPairColorizer.depreciation-notice": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"tabnine.experimentalAutoImports": true,
+	"[scss]": {
+		"editor.defaultFormatter": "HookyQR.beautify"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	}
 }
